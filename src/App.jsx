@@ -20,8 +20,8 @@ const Apps = {
     flex: '1',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center'
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 
 

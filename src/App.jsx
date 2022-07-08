@@ -1,13 +1,28 @@
 import React from 'react';
 
+import Index from './components/form/index';
+import Template from './components/template';
+
 function App() {
   return (
-    <div className="App">
-        <p>
-          dghbncsmec
-        </p>
+    <div style={Apps}>
+        <Template />
+        <Index />
     </div>
   );
 }
+
+/**
+ * Styles do App.jsx 
+ */
+const Apps = {
+    backgroundColor: '#fff',
+    flex: '1',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center'
+  }
+
 
 export default App;

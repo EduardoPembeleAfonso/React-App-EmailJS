@@ -21,22 +21,31 @@ const Template = () => {
                 <h1><Lottie options={defaultOptions} width={100} height={100} /></h1>
 
                 <text style={text}>
-                    Eu tenho o sono muito leve, e numa noite dessas notei que havia alguém andando 
-                    sorrateiramente no quintal de casa. 
-                    Levantei em silêncio e fiquei acompanhando os leves ruídos que vinham 
-                    lá de fora, até ver uma silhueta passando pela janela do banheiro. 
-                    Como minha casa era muito segura, com grades nas janelas e 
-                    trancas internas nas portas, 
-                    não fiquei muito preocupado, 
-                    mas era claro que eu não ia deixar um ladrão ali, espiando tranqüilamente.
+                    <p><strong>Manas e Manos a promoção continua...</strong></p>
+                    Batemos namorado mulherengo, ao domicílio com a tua raiva ou com a nossa raiva.
+                    E se achares que a tua mulher te traí ou o teu homem te traí diganos que batemos o namorado da tua mulher 
+                    ou a namorada da tua mulher. Batemos lhes nas diferentes categorias até :
+                    <ul>
+                        <li>
+                            <strong>Desmaiar</strong>
+                        </li>
+                        <li>
+                            <strong>Ter Juizo</strong>
+                        </li>
+                        <li>
+                            <strong>Se Mijar</strong>
+                        </li>
+                    </ul>
+                    a nossa equipa é muito eficiente, não irão se arrepender, é mesmo surra de verdade.
+                    Envianos uma mensagem agora! 
                 </text>
 
             </div>
 
             <div>
-                <p> <BsFillEnvelopeFill color='red' /> emaildabrincadeira@gmail.com</p>
-                <p> <BsFillTelephoneInboundFill color='red' /> 933 333 333</p>
-                <p> <BsFillGeoAltFill color='red' /> Angola, Luanda, Belas.</p>
+                <p> <BsFillEnvelopeFill color='#019102' /> emaildabrincadeira@gmail.com</p>
+                <p> <BsFillTelephoneInboundFill color='#019102' /> 933 333 333</p>
+                <p> <BsFillGeoAltFill color='#019102' /> Angola, Luanda, Belas.</p>
             </div>
 
           </div>
@@ -58,7 +67,8 @@ const header = {
     textAlign: '20px'
 }
 const text = {
-    marginLeft: '10px'
+    marginLeft: '10px',
+    fonFamily: 'Baskerville'
 }
 
 export default Template;

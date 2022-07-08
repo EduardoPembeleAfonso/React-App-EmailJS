@@ -88,23 +88,23 @@ const Index = () => {
             <form ref={form} onSubmit={sendEmail} style={formStyles} >
 
                 <div style={divContainer}>
-                    <input type="text" ref={firstName} name="firstName"  placeholder="Digite o seu nome" style={input}/>
-                    <input type="text" ref={email} name="email"  placeholder='Digite o seu e-mail' style={input} />
+                    <input type="text" ref={firstName} name="firstName"  placeholder="  Digite o seu nome" style={input}/>
+                    <input type="text" ref={email} name="email"  placeholder='  Digite o seu e-mail' style={input} />
                 </div>
 
                 <div style={divContainer}>
-                    <input type="text" ref={location} name="location"  placeholder='Digite a sua localização' style={input} />
-                    <input type="text" ref={number} name="number"  placeholder='Your number' style={input} />
+                    <input type="text" ref={location} name="location"  placeholder='  Digite a sua localização' style={input} />
+                    <input type="text" ref={number} name="number"  placeholder='  Digite o seu número' style={input} />
                 </div>
 
                 <div style={divContainer}>
-                    <textarea ref={message} name="message" id="message" style={textArea}></textarea>
+                    <textarea ref={message} name="message" placeholder="  Digite a sua mensagem" style={textArea}></textarea>
                 </div>
 
                     <div style={sexStyles}>
-                        <label for="female" style={Sexlabel}>Female</label>
+                        <label for="female" style={Sexlabel}>Mulher</label>
                         <input type="radio" id="female" value="Female" name="sex" onChange={handleChangeSex} />
-                        <label for="male" style={Sexlabel}>Male</label>
+                        <label for="male" style={Sexlabel}>Homem</label>
                         <input type="radio" id="male" value="Male" name='sex' onChange={handleChangeSex} />         
                     </div>
 
@@ -130,26 +130,27 @@ const Index = () => {
 /**
  * styles of form
  */
+
 const container = {
-    backgroundColor: '#ff282b',
+    backgroundColor: '#f0ecec',
     flex: '3',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     width: '10%',
-    height: '300px',
+    height: '350px',
     marginTop: '30px',
     marginRight: '30PX',
-    border: '1px solid #adafad',
-    borderRadius: '5px'
+    border: 'none',
+    borderRadius: '10px'
 }
 const titleForm = {
-    fontFamily: 'sans-serif',
+    fontFamily: 'Baskerville',
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#000',
-    marginTop: '10px'
+    marginTop: '20px'
 }
 const formStyles = {
     marginBottom: '15px',
@@ -178,11 +179,6 @@ const textArea = {
     border: '1px solid #fff',
     width: '95%'
 }
-const label = {
-    width: '45%',
-    textAlign: 'center',
-    color: '#fff'
-}
 const sexStyles = {
     display: 'flex',
     flexDirection: 'row',
@@ -195,13 +191,14 @@ const Sexlabel = {
     color: '#000',
 }
 const enviar = {
-    backgroundColor: '#000',
+    backgroundColor: '#019102',
     color: '#fff',
     borderRadius: '10px',
     border: 'none',
     height: '30px',
     width: '95%',
     fontWeight: 'bold',
+    fontFamily: 'Arial'
 }
 const styleModal = {
     content: {

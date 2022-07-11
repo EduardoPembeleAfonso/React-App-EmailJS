@@ -112,4 +112,146 @@
   }
 
 }
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .Apps {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-right: 30PX;
+    text-align: center;
+  }
+  .titleForm {
+    font-family: 'Baskerville';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .formStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  /* For mobile phones: */
+  .Apps {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-right: 30PX;
+    text-align: center;
+  }
+  .titleForm {
+    font-family: 'Baskerville';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .formStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 120px) {
+  /* For mobile phones: */
+  .Apps {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-right: 30PX;
+    text-align: center;
+  }
+  .titleForm {
+    font-family: 'Baskerville';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .formStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  .Apps {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-right: 30PX;
+    text-align: center;
+  }
+  .titleForm {
+    font-family: 'Baskerville';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .formStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
 

@@ -24,16 +24,16 @@ const Template = () => {
                     <p><strong>Manas e Manos a promoção continua...</strong></p>
                     Batemos namorado mulherengo, ao domicílio com a tua raiva ou com a nossa raiva.
                     E se achares que a tua mulher te traí ou o teu homem te traí diganos que batemos o namorado da tua mulher 
-                    ou a namorada da tua mulher. Batemos lhes nas diferentes categorias até :
+                    ou a namorada da tua mulher. Confira os nosso pacotes de surra abaixo :
                     <ul>
                         <li>
-                            <strong>Desmaiar</strong>
+                            <strong>Até Desmaiar</strong>
                         </li>
                         <li>
-                            <strong>Ter Juizo</strong>
+                            <strong>Até Ter Juizo</strong>
                         </li>
                         <li>
-                            <strong>Se Mijar</strong>
+                            <strong>Até Se Mijar</strong>
                         </li>
                     </ul>
                     a nossa equipa é muito eficiente, não irão se arrepender, é mesmo surra de verdade.
@@ -44,7 +44,7 @@ const Template = () => {
 
             <div>
                 <p> <BsFillEnvelopeFill color='#019102' /> eduardopafonso45@gmail.com</p>
-                <p> <BsFillTelephoneInboundFill color='#019102' /> 933 333 333</p>
+                <p> <BsFillTelephoneInboundFill color='#019102' /> (+244) 951 130 409</p>
                 <p> <BsFillGeoAltFill color='#019102' /> Angola, Luanda, Belas.</p>
             </div>
 

@@ -4,12 +4,12 @@ import Lottie from 'react-lottie';
 import Modal from 'react-modal';
 
 import Sucess from '../../assets/lotties/success.json';
-
+import '../../styles/styles.css';
 
 const Index = () => {
     // declarando as refs
     const form = useRef();
-    const firstName = useRef(null);
+    const name = useRef(null);
     const email = useRef(null);
     const location = useRef(null);
     const number = useRef(null);
@@ -19,34 +19,52 @@ const Index = () => {
     const [sex, setSex] = useState("");
     const [play, setPlay] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const [publicKey, setPublicKey] = useState("");
 
     //função que onClick do button
-    const handleClickOnButton =  (result) => {
-       if (result === 200) {
-            // setando o play e o showModal pra true
-            setPlay(true);
-            setShowModal(true);
+    const handleClickOnButton =  (status) => {
+        
+        /**
+         * Se o nome, email e mensagem estiverem vazios seta a publicKey como vazio
+         * caso contrario seta a publicKey com o valor da minha public key do emailjs : 85pmWer838PkoW1B6
+         */
+        if (name.current.value == '' && email.current.value == '' && message.current.value  == '') {
+            
+            setPublicKey('');
+        } else {
 
-            /**
-             * Depois de 4 segundo seta novamente o setShowModal (showModal) pra false
-             * pra fechar o modal
-             *   
-            */
-             setTimeout( () => {
-                 setShowModal(false);
-             }, 4000 );
+            setPublicKey('85pmWer838PkoW1B6');
 
-            // limpando os valores dos input e da textArea
-            firstName.current.value = '';
-            email.current.value = '';
-            location.current.value = '';
-            number.current.value = '';
-            message.current.value = '';
+            if (status === 200) {
+                // setando o play e o showModal pra true
+               setPlay(true);
+                setShowModal(true);
+    
+                /**
+                 * Depois de 4 segundo seta novamente o setShowModal (showModal) pra false
+                 * pra fechar o modal
+                 *   
+                */
+                 setTimeout( () => {
+                     setShowModal(false);
+                 }, 4000 );
+    
+                // limpando os valores dos input e da textArea
+                name.current.value = '';
+                email.current.value = '';
+                location.current.value = '';
+                number.current.value = '';
+                message.current.value = '';
+    
+           } else {
+            setPlay(false);
+            setShowModal(false);
+           }
 
-       } else {
-        setPlay(false);
-        setShowModal(false);
-       }
+
+        }
+
+       
 
     }
 
@@ -69,11 +87,10 @@ const Index = () => {
         e.preventDefault();
 
         // enviando o formualario
-        emailjs.sendForm('service_4x18r0d', 'template_7xq18sc', form.current, '85pmWer838PkoW1B6' )
+        emailjs.sendForm('service_4x18r0d', 'template_7xq18sc', form.current, publicKey )
             .then( (result) => {
                 handleClickOnButton(result.status);
                 console.log(result.text);
-                console.log(form);
             }, (error) => {
                 console.log(error.text);
             } );
@@ -81,34 +98,34 @@ const Index = () => {
 
 
     return (
-        <div style={container}>
+        <div className='Container'>
 
-            <text style={titleForm}>Fale connosco Agora!</text>
+            <text className='titleForm'>Fale connosco Agora!</text>
 
-            <form ref={form} onSubmit={sendEmail} style={formStyles} >
+            <form ref={form} onSubmit={sendEmail} className='formStyles' >
 
-                <div style={divContainer}>
-                    <input type="text" ref={firstName} name="firstName"  placeholder="  Digite o seu nome" style={input}/>
-                    <input type="text" ref={email} name="email"  placeholder='  Digite o seu e-mail' style={input} />
+                <div className='divContainer'>
+                    <input type="text" ref={name} name="firstName"  placeholder="  Digite o seu nome" className='input' />
+                    <input type="text" ref={email} name="email"  placeholder='  Digite o seu e-mail' className='input' />
                 </div>
 
-                <div style={divContainer}>
-                    <input type="text" ref={location} name="location"  placeholder='  Digite a sua localização' style={input} />
-                    <input type="text" ref={number} name="number"  placeholder='  Digite o seu número' style={input} />
+                <div className='divContainer'>
+                    <input type="text" ref={location} name="location"  placeholder='  Digite a sua localização' className='input' />
+                    <input type="text" ref={number} name="number"  placeholder='  Digite o seu número' className='input' />
                 </div>
 
-                <div style={divContainer}>
-                    <textarea ref={message} name="message" placeholder="  Digite a sua mensagem" style={textArea}></textarea>
+                <div className='divContainer'>
+                    <textarea ref={message} name="message" placeholder="  Digite a sua mensagem" className='textArea'></textarea>
                 </div>
 
-                    <div style={sexStyles}>
-                        <label for="female" style={Sexlabel}>Mulher</label>
+                    <div className='sexStyles'>
+                        <label for="female" className='SexLabel'>Mulher</label>
                         <input type="radio" id="female" value="Female" name="sex" onChange={handleChangeSex} />
-                        <label for="male" style={Sexlabel}>Homem</label>
+                        <label for="male" className='SexLabel'>Homem</label>
                         <input type="radio" id="male" value="Male" name='sex' onChange={handleChangeSex} />         
                     </div>
 
-                <button type='submit' style={enviar} onClick={ handleClickOnButton }> Enviar </button>
+                <button type='submit' className='enviar' onClick={ handleClickOnButton }> Enviar </button>
                 
                 <Modal
                     isOpen={showModal}
@@ -130,7 +147,7 @@ const Index = () => {
 /**
  * styles of form
  */
-
+/*
 const container = {
     backgroundColor: '#f0ecec',
     flex: '3',
@@ -199,7 +216,7 @@ const enviar = {
     width: '95%',
     fontWeight: 'bold',
     fontFamily: 'Arial'
-}
+}*/
 const styleModal = {
     content: {
         width: '350px',

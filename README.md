@@ -16,4 +16,4 @@ Pra rodar o projecto :
 ### `npm start`
 
 App rodando no modo desenvolvimento em:\
-Abrir [http://localhost:3000](http://localhost:3000) no teu browser.
+Abrir [http://localhost:3000](http://localhost:3000) no teu navegador.

@@ -69,7 +69,7 @@ const Index = () => {
         e.preventDefault();
 
         // enviando o formualario
-        emailjs.sendForm('service_xbwruic', 'template_uwmg4um', form.current, 'nwHnlgnT9whd-MdeG' )
+        emailjs.sendForm('service_4x18r0d', 'template_7xq18sc', form.current, '85pmWer838PkoW1B6' )
             .then( (result) => {
                 handleClickOnButton(result.status);
                 console.log(result.text);

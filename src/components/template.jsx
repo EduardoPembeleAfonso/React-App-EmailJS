@@ -43,7 +43,7 @@ const Template = () => {
             </div>
 
             <div>
-                <p> <BsFillEnvelopeFill color='#019102' /> emaildabrincadeira@gmail.com</p>
+                <p> <BsFillEnvelopeFill color='#019102' /> eduardopafonso45@gmail.com</p>
                 <p> <BsFillTelephoneInboundFill color='#019102' /> 933 333 333</p>
                 <p> <BsFillGeoAltFill color='#019102' /> Angola, Luanda, Belas.</p>
             </div>

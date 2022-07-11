@@ -8,12 +8,12 @@ react-modal
 
 Entra no directorio do projecto, e roda o seguinte comando:
 
-Pra instalar as depedencias
+Pra instalar as depedencias :
 ### `npm install`
 
 Pra rodar o projecto :
 
 ### `npm start`
 
-App rodando no modo desenvolvimento em.\
-Abri [http://localhost:3000](http://localhost:3000) no teu browser.
+App rodando no modo desenvolvimento em:\
+Abrir [http://localhost:3000](http://localhost:3000) no teu browser.

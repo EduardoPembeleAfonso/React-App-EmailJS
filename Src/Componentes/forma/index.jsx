@@ -33,7 +33,7 @@ const Index = () => {
             setPublicKey('');
         } else {
 
-            setPublicKey('85pmWer838PkoW1B6');
+            setPublicKey('#######');
 
             if (status === 200) {
                 // setando o play e o showModal pra true
